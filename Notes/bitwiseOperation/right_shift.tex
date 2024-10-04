@@ -1,0 +1,36 @@
+\subsection{Right Shift \texorpdfstring{$\gg$}{TEX}}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{| c | c | c |}
+        \hline
+        \b{P} & \b{Q} & \b{P $\gg$ Q} \\ \hline
+        0 & 0 & 0\\
+        \hline
+        0 & 1 & 1\\
+        \hline
+        1 & 0 & 1\\
+        \hline
+        1 & 1 & 0\\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsubsection{Codigo Example}
+
+\begin{minipage}{0.7\textwidth}
+    \inputminted[firstline=6, lastline=8]{cpp}{code/bitwise_operation.cpp}    
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+    \begin{center}
+        \[
+        \begin{aligned}
+            &111_2 \\
+          \color{pucpRojoOscuro}{\gg} \quad &2 \\
+          \hline
+            &011_2 = 3
+        \end{aligned}
+        \]
+    \end{center}    
+\end{minipage}

@@ -1,0 +1,33 @@
+\subsection{NOT \texorpdfstring{$\sim$}{TEX}}
+
+El not lo que hace nos brinda el complemento a 2, del número, no confundir con el negador lógico "!".
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{| c | c |}
+        \hline
+        \b{P}  & \b{$\sim$ P } \\ \hline
+        0 & 1\\
+        \hline
+        1 & 0\\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsubsection{Codigo Example}
+
+\begin{minipage}{0.7\textwidth}
+    \inputminted[firstline=6, lastline=8]{cpp}{code/bitwise_operation.cpp}    
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+    \begin{center}
+        \[
+        \begin{aligned}
+          \color{pucpRojoOscuro}{\sim} \quad &1001_2 \\
+          \hline
+            &0110_2 = 6
+        \end{aligned}
+        \]
+    \end{center}    
+\end{minipage}

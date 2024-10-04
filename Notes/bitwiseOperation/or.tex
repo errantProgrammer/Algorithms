@@ -1,0 +1,36 @@
+\subsection{OR \texorpdfstring{$\textbar$}{TEX}}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{| c | c | c |}
+        \hline
+        \b{P} & \b{Q} & \b{P \textbar Q} \\ \hline
+        0 & 0 & 0\\
+        \hline
+        0 & 1 & 1\\
+        \hline
+        1 & 0 & 1\\
+        \hline
+        1 & 1 & 1\\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsubsection{Codigo Example}
+
+\begin{minipage}{0.7\textwidth}
+    \inputminted[firstline=10, lastline=13]{cpp}{code/bitwise_operation.cpp}    
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+    \begin{center}
+        \[
+        \begin{aligned}
+            &111_2 \\
+          \color{pucpRojoOscuro}{\textbar} \quad &100_2 \\
+          \hline
+            &111_2 = 7
+        \end{aligned}
+        \]
+    \end{center}    
+\end{minipage}
