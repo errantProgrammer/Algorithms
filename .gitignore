@@ -3,3 +3,14 @@ main
 main.cpp
 main.py
 *~
+# Archivos generados por latex
+
+_minted-main/
+*.aux
+*.dvi
+*.log
+*.out
+*.pygmented
+*.snippets
+*.synctex.gz
+*.toc
