@@ -3,6 +3,7 @@ main
 main.cpp
 main.py
 *~
+*.exe
 # Archivos generados por latex
 
 _minted-main/
