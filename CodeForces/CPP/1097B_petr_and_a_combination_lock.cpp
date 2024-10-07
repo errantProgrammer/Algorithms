@@ -1,3 +1,8 @@
+/**
+ * Date: 05/10/2024
+ * URL: https://codeforces.com/problemset/problem/1097/B
+ */
+
 #include <bits/stdc++.h>
 
 int main(){
