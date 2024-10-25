@@ -10,7 +10,6 @@ int main(){
     std::cin >> n; //cantidad de angulos
     std::vector<int> angles(n);
     for (int i = 0; i < n; i++) std::cin >> angles[i];
-
     for (int mask = 0;mask < (1 << n);mask++){ // recorremos la mascara
         int total = 0;// suma total de los angulos
         for (int i = 0; i < n; i++){ // solo vamos a utilizar los n primeros bits
@@ -24,9 +23,6 @@ int main(){
             return 0;//se acaba el programa
         }        
     }
-
     std::cout << "NO";
-    
-    
     return 0;
 }

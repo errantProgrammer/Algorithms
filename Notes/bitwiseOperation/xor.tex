@@ -1,36 +1,34 @@
-\section{XOR \texorpdfstring{$\textasciicircum$}{TEX}}
+\section{XOR}
 
-\begin{table}[h]
-    \centering
-    \begin{tabular}{| c | c | c |}
-        \hline
-        \b{P} & \b{Q} & \b{P \textasciicircum Q} \\ \hline
-        0 & 0 & 0\\
-        \hline
-        0 & 1 & 1\\
-        \hline
-        1 & 0 & 1\\
-        \hline
-        1 & 1 & 0\\
-        \hline
-    \end{tabular}
-\end{table}
-
-\subsubsection{Codigo Example}
-
-\begin{minipage}{0.7\textwidth}
-    \inputminted[firstline=6, lastline=8]{cpp}{code/bitwise_operation.cpp}    
+\begin{minipage}[t]{0.05\textwidth} % Ajuste del ancho
+	\begin{tabular}{| c | c | c |}
+		\hline
+		\textbf{P} & \textbf{Q} & \textbf{P \textasciicircum Q} \\ \hline
+		0 & 0 & 0\\
+		\hline
+		0 & 1 & 1\\
+		\hline
+		1 & 0 & 1\\
+		\hline
+		1 & 1 & 0\\
+		\hline
+	\end{tabular}
 \end{minipage}
 \hfill
-\begin{minipage}{0.3\textwidth}
-    \begin{center}
-        \[
-        \begin{aligned}
-            &111_2 \\
-          \color{pucpRojoOscuro}{\textasciicircum} \quad &100_2 \\
-          \hline
-            &011_2 = 3
-        \end{aligned}
-        \]
-    \end{center}    
+\begin{minipage}[c]{0.4\textwidth} % Ajuste del ancho
+	\textbf{Código de ejemplo:}
+	\inputminted[firstline=15, lastline=17]{cpp}{code/bitwise_operation.cpp}    
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.25\textwidth} 
+	\textbf{Ejemplo de operacion:}
+	\centering
+	\[
+	\begin{aligned}
+		&111_2 \\
+		\color{pucpRojoOscuro}{\textasciicircum} \quad &100_2 \\
+		\hline
+		&011_2 = 3
+	\end{aligned}
+	\]
 \end{minipage}

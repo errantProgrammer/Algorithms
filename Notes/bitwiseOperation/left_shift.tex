@@ -1,36 +1,37 @@
-\section{Left Shift \texorpdfstring{$\ll$}{TEX}}
+\section{Left Shift}
 
-\begin{table}[h]
-    \centering
-    \begin{tabular}{| c | c | c |}
-        \hline
-        \b{P} & \b{Q} & \b{P $\ll$ Q} \\ \hline
-        0 & 0 & 0\\
-        \hline
-        0 & 1 & 1\\
-        \hline
-        1 & 0 & 1\\
-        \hline
-        1 & 1 & 0\\
-        \hline
-    \end{tabular}
-\end{table}
-
-\subsubsection{Codigo Example}
-
-\begin{minipage}{0.7\textwidth}
-    \inputminted[firstline=6, lastline=8]{cpp}{code/bitwise_operation.cpp}    
+\begin{minipage}[t]{0.15\textwidth} % Ajuste del ancho
+	\begin{tabular}{| c | c | c |}
+		\hline
+		\textbf{P} & \textbf{Q} & \textbf{P $\ll$ Q} \\ \hline
+		1010 & 1 & 10100\\
+		\hline
+		1010 & 2& 101000\\
+		\hline
+		1010 & 3 & 1010000\\
+		\hline
+		1010 & 4 & 10100000\\
+		\hline
+	\end{tabular}
 \end{minipage}
 \hfill
-\begin{minipage}{0.3\textwidth}
-    \begin{center}
-        \[
-        \begin{aligned}
-            &111_2 \\
-          \color{pucpRojoOscuro}{\ll} \quad &2 \\
-          \hline
-            &011_2 = 3
-        \end{aligned}
-        \]
-    \end{center}    
+\begin{minipage}[c]{0.4\textwidth} % Ajuste del ancho
+	\textbf{Código de ejemplo:}
+	\inputminted[firstline=24, lastline=26]{cpp}{code/bitwise_operation.cpp}    
 \end{minipage}
+\hfill
+\begin{minipage}[c]{0.25\textwidth} 
+	\textbf{Ejemplo de operacion:}
+	\centering
+	 \[
+	\begin{aligned}
+		&111_2 \\
+		\color{pucpRojoOscuro}{\ll} \quad &2 \\
+		\hline
+		&011_2 = 3
+	\end{aligned}
+	\]
+\end{minipage}
+\newline
+
+Ver que si hacemos (\(\ll n\) ) es similar a multiplicar  por \(2^n\).
